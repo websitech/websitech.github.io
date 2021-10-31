@@ -87,9 +87,13 @@ button {
 }
 
 #hero .card {
-  box-shadow: 11px 7px 16px #f9f9f9;
+  box-shadow: 1px 1px 16px #464646;
   border: 0;
   text-align: center;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 #hero .icon {
