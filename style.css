@@ -12,6 +12,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+#title {
+  font-size: 50px;
+}
+
 nav.logo {
   width: 50px;
 }
@@ -68,11 +72,6 @@ section h1 {
 section p {
   font-size: 16px;
   font-weight: 300;
-}
-
-button {
-  max-width: 50%;
-  border-radius: 50px !important;
 }
 
 #hero .col {
@@ -140,6 +139,7 @@ button {
 @media only screen and (min-width: 200px) and (max-width: 399px) {
   body {
     background-image: url(./assets/softBGPortrait.png);
+    background-size: 200%;
   }
 }
 
@@ -147,6 +147,7 @@ button {
 @media only screen and (min-width: 400px) and (max-width: 599px) {
   body {
     background-image: url(./assets/softBGPortrait.png);
+    background-size: 200%;
   }
 }
 
@@ -169,4 +170,31 @@ button {
     background-image: url(./assets/softBG.png);
     background-size: 200%;
   }
+}
+
+.bn3637 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+
+.bn37 {
+  border-color: transparent;
+  background-color: #23272b;
+  color: #fff;
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.bn37:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
 }
