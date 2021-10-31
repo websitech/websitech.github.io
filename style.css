@@ -3,13 +3,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   display: block;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
-  background-image: url(./assets/softBG.png);
 }
 
 nav.logo {
@@ -31,6 +31,11 @@ nav.logo {
   text-transform: uppercase;
   font-weight: 900;
   color: #6c63ff;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 nav ul li a {
@@ -55,7 +60,7 @@ section.alt {
 section h1 {
   text-transform: uppercase;
   font-weight: 900;
-  color: #6c63ff;
+  color: #0d00ff;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -90,10 +95,24 @@ button {
   box-shadow: 1px 1px 16px #464646;
   border: 0;
   text-align: center;
+  margin: 20px;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.large-text {
+  font-size: 24px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.btn-large {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 #hero .icon {
@@ -115,4 +134,39 @@ button {
 #contact h1 {
   text-align: center;
   color: white;
+}
+
+/* For width 200 - 399 */
+@media only screen and (min-width: 200px) and (max-width: 399px) {
+  body {
+    background-image: url(./assets/softBGPortrait.png);
+  }
+}
+
+/* For width 400 - 599 */
+@media only screen and (min-width: 400px) and (max-width: 599px) {
+  body {
+    background-image: url(./assets/softBGPortrait.png);
+  }
+}
+
+/* For width 600 - 999 */
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+  body {
+    background-image: url(./assets/softBG.png);
+  }
+}
+
+/* For width 1000 - 1900 */
+@media only screen and (min-width: 1000px) and (max-width: 1900px) {
+  body {
+    background-image: url(./assets/softBG.png);
+  }
+}
+
+@media only screen and (min-width: 1901px) {
+  body {
+    background-image: url(./assets/softBG.png);
+    background-size: 200%;
+  }
 }
